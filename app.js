@@ -1,7 +1,44 @@
 // document.addEventListener('DOMContentLoaded', function() {
 //     var elems = document.querySelectorAll('select');
 //     var instances = M.FormSelect.init(elems, options);
-// ---------------------------------TEXT SIDEBAR---------------------------------------------
+
+// Botón cierre aside
+
+const closeAsideBtn = document.getElementById('close-sidebar-btn');// botón X de cierre sidebar
+const aside = document.getElementById('aside'); //etiqueta aside
+
+closeAsideBtn.addEventListener('click', () => {
+  aside.classList.add("hidden")
+});
+
+// ----------------------------------------IMÁGEN------------------------------------------
+
+//Botón IMÁGEN
+
+const btnImg = document.getElementById('img-btn'); //Botón IMÁGEN del Header
+const imgSection = document.getElementById('img-section'); //Section Sidebar Imágen
+const txtSection = document.getElementById('txt-section'); //Section Sidebar Texto
+
+btnImg.addEventListener('click', ( )=>{
+aside.classList.remove("hidden")
+imgSection.classList.remove("hidden")
+txtSection.classList.add("hidden")
+});
+
+
+
+
+// ---------------------------------TEXT SIDEBAR-------------------------------------------
+
+//Botón TEXTO
+
+const btnTxt = document.getElementById('txt-btn');
+
+btnTxt.addEventListener('click', () => {
+  aside.classList.remove("hidden")
+  imgSection.classList.add("hidden")
+  txtSection.classList.remove("hidden")
+})
 
 
 // Ingreso texto superior
@@ -29,11 +66,8 @@ const colorInput = document.querySelector('.color-input'); //input type color te
 const colorSpan = document.getElementById('color-span'); //span del input color de texto meme
 const txtBackgroundColorInput = document.querySelector('.txt-background-color-input'); // input type color fondo texto meme
 const txtBackgroundColorSpan = document.getElementById('txt-background-color-span'); //span del imput color fondo texto
-// const topText = document.getElementById('top-text');
-// console.log(topText)
-// const bottomText = document.getElementById('bottom-text');
 const transparentBackground = document.getElementById('no-background'); //input checkbox fondo transparente
-// console.log(transparentBackground)
+
 
 colorInput.addEventListener('input', ()=>{
   let color = colorInput.value;
@@ -58,41 +92,9 @@ transparentBackground.addEventListener('click', ()=>{
   memeTopText.classList.remove("transparent");
 }
 })
-  
-
-
-//falta ver cómo es para retomar al color anterior
-
-
-// const collection = document.getElementsByClassName("example");
-// for (let i = 0; i < collection.length; i++) {
-//   collection[i].style.backgroundColor = "red";
 
 
 
-
-
-// FALTA HACER QUE EL COLOR DEL TEXTO ESCRITO CAMBIE EN EL CANVAS
-
-
-// Botón de cierre para sidebar texto
-
-const btnCloseTxtSidebar = document.getElementById("close-txt-sidebar"); //trae botón X de sidebar texto
-const aside = document.getElementById("aside"); //todo el aside
-
-btnCloseTxtSidebar.addEventListener('click', ()=>{
- 
-  aside.classList.add("hidden");
- 
-})
-
-// Botón TEXTO (Abre aside)
-
-const txtButton = document.getElementById("txt-btn"); //Botón TEXTO del header
-
-txtButton.addEventListener('click', ()=>{
-  aside.classList.remove("hidden");
-})
 
 //checkbox "sin texto sup"
 
@@ -100,7 +102,7 @@ const noTopText = document.getElementById('top-txt-non'); //input "sin texto sup
 
 noTopText.addEventListener('click', ()=>{
   memeTopText.classList.toggle("hidden")
-  
+
 })
 
 //checkbox "sin texto sup"
@@ -123,7 +125,7 @@ const fontsOptions = document.getElementById('fonts'); //Tre etiqueta select con
 
 // const fonts = () => {
 //   memeTopText.style.fontFamily = `${fontFamily.value}`
- 
+
 // };
 
 fontsOptions.addEventListener('change', ()=>{
@@ -206,5 +208,10 @@ lineHeight.addEventListener('change', ()=>{
   memeTopText.style.lineHeight = `${lineHeight.value}`;
   memeBottomText.style.lineHeight = `${lineHeight.value}`;
 })
+
+
+// ---------------------------------IMG SIDEBAR-------------------------------------------
+
+
 
 

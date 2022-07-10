@@ -33,7 +33,7 @@
 
                 <div class="row justify justify-content-center center" style="background-color: lightskyblue;">         
     <!-- BOTONES HEADER -->
-                        <a class="waves-effect waves-light btn header-btn col-1 "><i class="material-icons left">image</i>Imágen</a>
+                        <a id="img-btn" class="waves-effect waves-light btn header-btn col-1 "><i class="material-icons left">image</i>Imágen</a>
               
                         <a id="txt-btn" class="waves-effect waves-light btn  col-1 "><i class="material-icons left col-s4">keyboard</i>Texto</a>
                                 
@@ -76,19 +76,26 @@
 
 <!-- ASIDE FILTROS IMÁGEN -->
 <aside id="aside" class="sidebar" style="background-color: pink;">
-      
-        <div class="row justify-content-end hidden">
+
+        <div class="row justify-content-end">
             <div class="x-btn-container col-1  ">
-                <a id="" class="close" href="#">X</a>
+                <a id="close-sidebar-btn" class="close" href="#">X</a>
             </div>
         </div> 
 
-
-
-
-       <div class="row ">
+    <section id="img-section"class="">
+        <!-- <section id="txtSidebar" class="txt-style-section">
                
-            <section class="img-filter-section hidden">
+            <div id="txtAside" class=" x-btn-container d-flex justify-content-end">
+                <div class=" col-1  ">
+                    <a id="close-txt-sidebar" class="close" href="#">X</a>
+                </div>
+            </div> -->
+
+
+       <!-- <div class="row "> -->
+               
+           
                 <h2 class="secondary-tittle">IMÁGEN</h2>
                 <div>
                     <h3 class="third-tittle">URL</h3>
@@ -102,11 +109,11 @@
                         <div class="color-wrapper col-6">
                            
                            
-                        <input id="" type="color" class="form-control form-control-color color-choice " id="exampleColorInput" value="#FFFFFF">
+                            <input id="" type="color" class="form-control form-control-color color-choice " id="exampleColorInput" value="#FFFFFF">
                        
-                        <span id="" class="img-color-span">#FFFFFF</span>
+                            <span id="" class="img-color-span">#FFFFFF</span>
                        
-                    </div>
+                        </div>
 
 
 
@@ -178,18 +185,18 @@
                 <a class="waves-effect waves-light btn btn-default-styles">Reestablecer Filtros</a>
 
           
-            </section>
-        </div> 
+    </section>
+    <!-- </div>  -->
 
 <!-- TEXT ASIDE  -->
   
-    <section id="txtSidebar" class="txt-style-section">
+    <section id="txt-section" class="txt-style-section">
                
-        <div id="txtAside" class=" x-btn-container d-flex justify-content-end">
+        <!-- <div id="txt-aside" class=" x-btn-container d-flex justify-content-end">
             <div class=" col-1  ">
                 <a id="close-txt-sidebar" class="close" href="#">X</a>
             </div>
-        </div>
+        </div> -->
 
         <h2 class="secondary-tittle">TEXTO</h2>
 
@@ -257,19 +264,19 @@
 
                             <!-- Font Size -->
                     <div class="col-6">
-                    <input type="number" name="Font Size" aria-label="Tamaño de fuente" class="" id="font-size" min="12
-                    " value="40">
+                        <input type="number" name="Font Size" aria-label="Tamaño de fuente" class="" id="font-size" min="12
+                        " value="40">
                     </div>
 
                             <!-- Text Align -->
 
                     <div class="txt-align-container col">
                        <div class="row">
-                        <a id="left-align" class="waves-effect waves-light btn  sm-align-btn col-4"><i class="material-icons left i-align">format_align_left</i></a>
+                            <a id="left-align" class="waves-effect waves-light btn  sm-align-btn col-4"><i class="material-icons left i-align">format_align_left</i></a>
                    
-                        <a id="align-center" class="waves-effect waves-light btn sm-align-btn col-4"><i class="material-icons left">format_align_center</i></a>
+                            <a id="align-center" class="waves-effect waves-light btn sm-align-btn col-4"><i class="material-icons left">format_align_center</i></a>
                   
-                        <a id="right-align" class="waves-effect waves-light btn sm-align-btn col-4"><i class="material-icons left">format_align_right</i></a>
+                            <a id="right-align" class="waves-effect waves-light btn sm-align-btn col-4"><i class="material-icons left">format_align_right</i></a>
                         </div>
                     </div>
                   
@@ -347,7 +354,7 @@
 
 
             </div>
-        </section>
+    </section>
 
     </aside>
 
