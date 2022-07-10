@@ -111,7 +111,8 @@ noBottomText.addEventListener('click', ()=>{
 
 // Fuentes - Selección font-family
 
-const fontsOptions = document.getElementById('fonts');
+const fontsOptions = document.getElementById('fonts'); //Tre etiqueta select con todas las options
+
 // let arial = document.getElementById('arial');
 // let arima =  document.getElementById('arima');
 // let titan = document.getElementById('titan-one');
@@ -133,7 +134,7 @@ fontsOptions.addEventListener('change', ()=>{
 
 // Fuentes - Selección font-size
 
-const fSize = document.getElementById('font-size'); //Tre etiqueta select con todas las options
+const fSize = document.getElementById('font-size'); //Trae imput tipe number
 
 fSize.addEventListener('change', ()=>{
   memeTopText.style.fontSize = `${fSize.value}px`
@@ -185,3 +186,25 @@ darkBorder.addEventListener('click', ()=>{
   memeTopText.style.webkitTextStroke = '2px black';
   memeBottomText.style.webkitTextStroke = '2px black';
 })
+
+// Espaciado - Padding top y bottom etiquetas p del canvas
+
+const paddingTxt = document.getElementById('padding-input'); //Trae imput tipe number espaciado
+
+paddingTxt.addEventListener('change', ()=>{
+  memeTopText.style.paddingTop = `${paddingTxt.value}px`;
+  memeTopText.style.paddingBottom = `${paddingTxt.value}px`;
+  memeBottomText.style.paddingTop = `${paddingTxt.value}px`;
+  memeBottomText.style.paddingBottom = `${paddingTxt.value}px`;
+});
+
+// Interlineado
+
+const lineHeight = document.getElementById('line-height-input'); //Trae el select con las option de interlineado
+
+lineHeight.addEventListener('change', ()=>{
+  memeTopText.style.lineHeight = `${lineHeight.value}`;
+  memeBottomText.style.lineHeight = `${lineHeight.value}`;
+})
+
+
