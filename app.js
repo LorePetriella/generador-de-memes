@@ -25,7 +25,26 @@ imgSection.classList.remove("hidden")
 txtSection.classList.add("hidden")
 });
 
+// URL IMÁGEN
 
+const urlInput = document.getElementById('url-input'); //Input sidebar IMÁGEN para cargar la imágen
+
+const img = document.getElementById('meme-img'); //div en donde se ubica la imágen subida
+
+urlInput.addEventListener('change', () => {
+img.style.backgroundImage = `url('${urlInput.value}')`;
+})
+
+// background-image: url('../comun/imagenes/icono.gif');
+
+const images = document.querySelectorAll(".img");
+
+images.forEach((image) => {
+  let imgsrc = image.getAttribute("src");
+  if (imgsrc === "") {
+    image.src = "/images/missing.png";
+  }
+});
 
 
 // ---------------------------------TEXT SIDEBAR-------------------------------------------

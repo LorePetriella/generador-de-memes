@@ -328,3 +328,13 @@ input[type="color" i] {
 }
 
 
+/* clase usada para el input url
+ */
+ /* panel-control-input {
+    width: 100%;
+    height: 36px;
+    background-color: var(--color-boton-default);
+    border-radius: var(--border-radius);
+    transition: background-color 0.2s;
+    padding: 5px 10px;
+    margin-bottom: 5px; */
