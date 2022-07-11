@@ -98,9 +98,17 @@ label{
 
 }
 
-.meme-txt-container{
-    position: static;
+#meme-img{
+    width: 100%;
+    flex-grow: 1;
+    background-size: cover;
 }
+
+
+
+/* .meme-txt-container{
+    position: static;
+/* } con esto no funcionaba el modo transparent  */
 .meme-txt{
 
     font-family: Arial;
@@ -125,11 +133,11 @@ label{
 #bottom-text{
     bottom: 0;
 }
-.img{
+/* .img{
     width: 100%;
    flex-grow: 1;
    background-size: cover;
-}
+} */
 
 
 /* botones */

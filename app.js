@@ -25,6 +25,11 @@ imgSection.classList.remove("hidden")
 txtSection.classList.add("hidden")
 });
 
+// ----------------------------------------como quiero que inicie-----------------------
+aside.classList.remove("hidden") //quiero que se vea el asside
+imgSection.classList.remove("hidden") //quiero que no se vea la section imagen
+txtSection.classList.add("hidden") //qiuero que se vea la section texto
+
 // URL IMÁGEN
 
 const urlInput = document.getElementById('url-input'); //Input sidebar IMÁGEN para cargar la imágen
@@ -96,23 +101,53 @@ colorInput.addEventListener('input', ()=>{
   memeBottomText.style.color = color;
 })
 
+
+
 txtBackgroundColorInput.addEventListener('input', ()=>{
-  let fondo = txtBackgroundColorInput.value;
+  fondo = txtBackgroundColorInput.value;
   txtBackgroundColorSpan.style.color = fondo;
   txtBackgroundColorSpan.innerHTML = fondo;
   memeTopText.style.backgroundColor = fondo;
   memeBottomText.style.backgroundColor = fondo;
-})
-
-transparentBackground.addEventListener('click', ()=>{
-  if(transparentBackground.checked){
-  memeTopText.classList.add("transparent");
-}else{
-  memeTopText.classList.remove("transparent");
-}
+  
 })
 
 
+
+// transparentBackground.addEventListener('click', ()=>{
+//   if(transparentBackground.checked){
+//   memeTopText.classList.add("transparent");
+//   memeBottomText.classList.add("transparent");
+//   // urlInput.style.backgroundSize = 'cover';
+//   // memeTopText.style.position = 'absolute';
+//   // memeBottomText.style.position = 'absolute';
+  
+// }else{
+//   memeTopText.classList.remove("transparent");
+//   memeBottomText.classList.remove("transparent");
+//   // memeTopText.style.position = 'static';
+//   // memeBottomText.style.position = 'static';
+// }
+// })
+
+
+transparentBackground.addEventListener('change', (event) => {
+ 
+
+  if (event.target.checked) {
+    memeTopText.style.backgroundColor = 'transparent';
+    memeBottomText.style.backgroundColor = 'transparent';
+    memeTopText.style.position = 'absolute';
+    memeBottomText.style.position = 'absolute';
+    memeBottomText.style.bottom = "8px";
+  }else {
+    memeTopText.style.backgroundColor = fondo ;
+    memeBottomText.style.backgroundColor = fondo ;
+    memeBottomText.style.bottom = "0px";
+    memeTopText.style.position = 'static';
+    memeBottomText.style.position = 'static';
+  }   
+});
 
 
 //checkbox "sin texto sup"
