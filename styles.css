@@ -12,34 +12,63 @@ body{
 }
 body.jedi-mode {
     --color-header: #e0e0e0;
-    /* --color-background: #eeeeee;
+    --color-background: #eeeeee;
     --color-panel: #fafafa;
     --color-boton-default: #e0e0e0;
     --color-boton-default-hover: #bdbdbd;
     --color-text: #424242;
     --color-title-panel: rgb(33 33 33 / 80%);
     --color-title-control: rgb(33 33 33 / 70%);
-    --font-primary: 'Open Sans', sans-serif;
-    --border-radius: 3px; */
+   
+    --border-radius: 3px; 
+
+
 }
 
 body.sith-mode {
     --color-header: #191e2b;
-    /* --color-background: #30343f;
+    --color-background: #30343f;
     --color-panel: #252935;
     --color-boton-default: #393e49;
     --color-boton-default-hover: #4e5565;
     --color-text: #ffffff;
-    --font-primary: 'Open Sans', sans-serif;
-    --border-radius: 3px; */
+    
+    --border-radius: 3px;
 }
 
+body.sith-mode{
+    color:  #ffffff;
+    background-color:  #30343f;
+    
+}
 
+.sith-mode aside{ 
+    background-color: #191E2B;
+}
+ 
+.sith-mode header{
+   background-color: #191e2b;  
+}
 
+.sith-mode a, i, label{
+    color:  #ffffff; 
+}
 
-label{
+.sith-mode #close-sidebar-btn{
+    color:  #ffffff;
+}
+
+.sith-mode select, textarea, input{
+   background-color: #393e49 ;
+}
+
+.sith-mode select, textarea, input:hover{
+    background-color: #4e5565 ;
+}
+
+/* label{
     color: black;
-}
+} */
 
 /* BOTONES */
 
@@ -49,7 +78,7 @@ label{
     justify-content: center;
     align-items: center;
     padding: 0 10px;
-    border-radius: var(--border-radius);
+    border-radius: 3px ;
     transition: background-color 0.2s;
     font-size: 14px;
     cursor: pointer;
@@ -70,18 +99,11 @@ label{
     text-align: center;
     margin: 10px;
 }
-
-
-
-/* .bright-mode{
-    background-color: #E0E0E0;
-    color: #424242;
+ 
+.header-margin{
+    margin-bottom: 5px;
 }
 
-.dark-mode{
-    background-color: #191E2B;
-    color: #FFFFFF;
-} */
 
 
 /* CANVAS IMAGEN */
@@ -95,6 +117,7 @@ label{
     display: flex;
     flex-direction: column;
     padding: 0;
+    margin-top: 5px;
 
 }
 
@@ -156,6 +179,7 @@ label{
     margin-top: 35px;
     color: white;
     background-color: #1f8b40;
+    
 
 }
 
@@ -257,9 +281,9 @@ input[type='color']::-webkit-color-swatch{
 
 
 /* filtros select */
-.filter-options label{
+/* .filter-options label{
     color:#000;
-}
+} */
 
 
 .txt-color-span{
@@ -302,14 +326,12 @@ margin:auto;
 }
 
 select, textarea {
-    border: 0;  
-    background-color: grey;
-    
+    border: 0;         
     outline: 0;
 }
 
 input[type="color" i] {
-     background-color: grey;
+     
      position:absolute;
      top: 25px;
      appearance: auto;
@@ -346,3 +368,7 @@ input[type="color" i] {
     transition: background-color 0.2s;
     padding: 5px 10px;
     margin-bottom: 5px; */
+
+    input :hover{
+        background-color: #bdbdbd;
+    }
