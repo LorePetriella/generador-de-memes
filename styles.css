@@ -30,7 +30,7 @@ body.sith-mode {
     --color-background: #30343f;
     --color-panel: #252935;
     --color-boton-default: #393e49;
-    --color-boton-default-hover: #4e5565;
+    
     --color-text: #ffffff;
     
     --border-radius: 3px;
@@ -62,10 +62,13 @@ body.sith-mode{
    background-color: #393e49 ;
 }
 
-.sith-mode select, textarea, input:hover{
+/* .sith-mode a, select, textarea, input:hover{
     background-color: #4e5565 ;
+} */
+.sith-mode #txt-btn:hover, #img-btn:hover, #sith-btn:hover, .sith-hover:hover, input:hover, select:hover, textarea:hover{
+    background-color: #4e5565;
+    border: 1px solid transparent;
 }
-
 /* label{
     color: black;
 } */
