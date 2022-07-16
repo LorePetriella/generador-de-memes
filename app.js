@@ -72,18 +72,7 @@ img.style.backgroundBlendMode = blend;
 
 //-----------------------FILTROS IMG----------------------------------------------
 
-// let arial = document.getElementById('arial');
-// let arima =  document.getElementById('arima');
-// let titan = document.getElementById('titan-one');
-// let openSans = document.getElementById('open-sans');
-// let hevetica = document.getElementById('helvetica');
-// let impact = document.getElementById('impact');
-// let verdana = document.getElementById('verdana');
 
-// const fonts = () => {
-//   memeTopText.style.fontFamily = `${fontFamily.value}`
-
-// };
 const brigtnessRange = document.getElementById('brightness'); //Input brillo
 const opacityRange = document.getElementById('opacity'); //Input opacidad
 const contrastRange = document.getElementById('contrast'); //Input contraste
@@ -110,13 +99,35 @@ hueRange.addEventListener('input', imgFilter);
 saturateRange.addEventListener('input', imgFilter);
 invertRange.addEventListener('input', imgFilter);
 
+//---------------------------------Botón Restablecer Filtros-----------------------------
 
-// console.log(sepiaRange.value)
+const restart = (e) => {
 
-// sepiaRange.addEventListener('input', () => {
-//   console.log(sepiaRange.value)
-//   img.style.filter = `sepia(${sepiaRange.value}%)`
-// })
+e.preventDefault()
+img.style.filter = `brightness(1) opacity(1) contrast(100%) blur(0px) grayscale(0%) sepia(0%) hue-rotate(0deg) saturate(100%) invert(0)` 
+
+
+brigtnessRange.value = '1';
+opacityRange.value = '1';
+contrastRange.value = '100';
+blurRange.value = '0';
+grayScaleRange.value = '0';
+sepiaRange.value = '0';
+hueRange.value = '0';
+saturateRange.value = '100';
+invertRange.value = '0';
+
+
+}
+ 
+const restartFilterBtn = document.getElementById('default-filter-btn');
+restartFilterBtn.addEventListener('click', (e)=>{
+  restart(e)
+});
+
+
+
+
 
 // ---------------------------------TEXT SIDEBAR-------------------------------------------
 
@@ -179,22 +190,6 @@ txtBackgroundColorInput.addEventListener('input', ()=>{
 })
 
 
-
-// transparentBackground.addEventListener('click', ()=>{
-//   if(transparentBackground.checked){
-//   memeTopText.classList.add("transparent");
-//   memeBottomText.classList.add("transparent");
-//   // urlInput.style.backgroundSize = 'cover';
-//   // memeTopText.style.position = 'absolute';
-//   // memeBottomText.style.position = 'absolute';
-  
-// }else{
-//   memeTopText.classList.remove("transparent");
-//   memeBottomText.classList.remove("transparent");
-//   // memeTopText.style.position = 'static';
-//   // memeBottomText.style.position = 'static';
-// }
-// })
 
 
 transparentBackground.addEventListener('change', (event) => {
