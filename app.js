@@ -70,27 +70,53 @@ let blend = imgBackgroundColorBlend.value;
 img.style.backgroundBlendMode = blend;
 });
 
+//-----------------------FILTROS IMG----------------------------------------------
+
+// let arial = document.getElementById('arial');
+// let arima =  document.getElementById('arima');
+// let titan = document.getElementById('titan-one');
+// let openSans = document.getElementById('open-sans');
+// let hevetica = document.getElementById('helvetica');
+// let impact = document.getElementById('impact');
+// let verdana = document.getElementById('verdana');
+
+// const fonts = () => {
+//   memeTopText.style.fontFamily = `${fontFamily.value}`
+
+// };
+const brigtnessRange = document.getElementById('brightness'); //Input brillo
+const opacityRange = document.getElementById('opacity'); //Input opacidad
+const contrastRange = document.getElementById('contrast'); //Input contraste
+const blurRange = document.getElementById('blur'); //Input Blur
+const grayScaleRange = document.getElementById('grayscale'); //Input Escala de Grises
+const sepiaRange = document.getElementById('sepia'); //Input sepia
+const hueRange = document.getElementById('hue'); //Input hue
+const saturateRange = document.getElementById('saturate'); //Input saturación
+const invertRange = document.getElementById('invert'); //Input Negativo
 
 
+let imgFilter = () => {
+  img.style.filter = `brightness(${brigtnessRange.value}) opacity(${opacityRange.value}) contrast(${contrastRange.value}%) blur(${blurRange.value}px) grayscale(${grayScaleRange.value}%) sepia(${sepiaRange.value}%) hue-rotate(${hueRange.value}deg) saturate(${saturateRange.value}%) invert(${invertRange.value})`
+  
+}
+
+brigtnessRange.addEventListener('input', imgFilter);
+opacityRange.addEventListener('input', imgFilter);
+contrastRange.addEventListener('input', imgFilter);
+blurRange.addEventListener('input', imgFilter);
+grayScaleRange.addEventListener('input', imgFilter);
+sepiaRange.addEventListener('input', imgFilter);
+hueRange.addEventListener('input', imgFilter);
+saturateRange.addEventListener('input', imgFilter);
+invertRange.addEventListener('input', imgFilter);
 
 
+// console.log(sepiaRange.value)
 
-
-// Input color y mezcla
-
-// const imgWrapper = document.getElementById('img-wrapper'); //Contenedor de imágen
-// const imgBackgroundColorInput = getElementById('img-input-color'); //Input  color para fondo img
-// const colorName = getElementById('img-color-span'); //Span que muestra el valor del color elegido
-// const imgBackgroundColorBlend = getElementById('background-blend'); //Select con opciones mezcla fondo
-
-// imgBackgroundColorInput.addEventListener('click', ()=>{
-//  let imgBkgdColor = imgBackgroundColorInput.value;
-//  colorName.innerHTML = imgBkgdColor,
-//  imgWrapper.style.background = imgBkgdColor;
-// });
-
-
-
+// sepiaRange.addEventListener('input', () => {
+//   console.log(sepiaRange.value)
+//   img.style.filter = `sepia(${sepiaRange.value}%)`
+// })
 
 // ---------------------------------TEXT SIDEBAR-------------------------------------------
 
@@ -209,18 +235,6 @@ noBottomText.addEventListener('click', ()=>{
 
 const fontsOptions = document.getElementById('fonts'); //Tre etiqueta select con todas las options
 
-// let arial = document.getElementById('arial');
-// let arima =  document.getElementById('arima');
-// let titan = document.getElementById('titan-one');
-// let openSans = document.getElementById('open-sans');
-// let hevetica = document.getElementById('helvetica');
-// let impact = document.getElementById('impact');
-// let verdana = document.getElementById('verdana');
-
-// const fonts = () => {
-//   memeTopText.style.fontFamily = `${fontFamily.value}`
-
-// };
 
 fontsOptions.addEventListener('change', ()=>{
   memeTopText.style.fontFamily = `${fontsOptions.value}`
