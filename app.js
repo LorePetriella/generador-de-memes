@@ -1,6 +1,4 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     var elems = document.querySelectorAll('select');
-//     var instances = M.FormSelect.init(elems, options);
+
 
 // Botón cierre aside
 
@@ -13,7 +11,6 @@ closeAsideBtn.addEventListener('click', () => {
 
 // ----------------------------------------IMÁGEN------------------------------------------
 
-//Botón IMÁGEN
 
 const btnImg = document.getElementById('img-btn'); //Botón IMÁGEN del Header
 const imgSection = document.getElementById('img-section'); //Section Sidebar Imágen
@@ -25,10 +22,14 @@ imgSection.classList.remove("hidden")
 txtSection.classList.add("hidden")
 });
 
+
 // ----------------------------------------como quiero que inicie-----------------------
-aside.classList.remove("hidden") //quiero que se vea el asside
+aside.classList.remove("hidden") //quiero que se vea el aside
 imgSection.classList.remove("hidden") //quiero que no se vea la section imagen
 txtSection.classList.add("hidden") //qiuero que se vea la section texto
+
+
+
 
 // URL IMÁGEN
 
@@ -40,7 +41,7 @@ urlInput.addEventListener('change', () => {
 img.style.backgroundImage = `url('${urlInput.value}')`;
 })
 
-// background-image: url('../comun/imagenes/icono.gif');
+
 
 const images = document.querySelectorAll(".img");
 
@@ -50,6 +51,45 @@ images.forEach((image) => {
     image.src = "/images/missing.png";
   }
 });
+
+//--------------FONDO IMÁGEN - Input color y mezcla---------------------------
+const imgWrapper = document.getElementById('img-wrapper'); //Contenedor de imágen
+const imgBackgroundColorInput = document.getElementById('img-input-color'); //Input  color para fondo img
+const colorName = document.getElementById('img-color-span'); //Span que muestra el valor del color elegido
+
+const imgBackgroundColorBlend = document.getElementById('background-blend'); //Select con opciones mezcla fondo
+
+imgBackgroundColorInput.addEventListener('change', ()=>{
+ const imgBkgdColor = imgBackgroundColorInput.value;
+ colorName.innerHTML = imgBkgdColor,
+ img.style.backgroundColor = imgBkgdColor;
+});
+
+imgBackgroundColorBlend.addEventListener('change', ()=>{
+let blend = imgBackgroundColorBlend.value;
+img.style.backgroundBlendMode = blend;
+});
+
+
+
+
+
+
+
+// Input color y mezcla
+
+// const imgWrapper = document.getElementById('img-wrapper'); //Contenedor de imágen
+// const imgBackgroundColorInput = getElementById('img-input-color'); //Input  color para fondo img
+// const colorName = getElementById('img-color-span'); //Span que muestra el valor del color elegido
+// const imgBackgroundColorBlend = getElementById('background-blend'); //Select con opciones mezcla fondo
+
+// imgBackgroundColorInput.addEventListener('click', ()=>{
+//  let imgBkgdColor = imgBackgroundColorInput.value;
+//  colorName.innerHTML = imgBkgdColor,
+//  imgWrapper.style.background = imgBkgdColor;
+// });
+
+
 
 
 // ---------------------------------TEXT SIDEBAR-------------------------------------------

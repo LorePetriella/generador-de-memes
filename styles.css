@@ -42,25 +42,26 @@ body.sith-mode{
     
 }
 
-.sith-mode aside{ 
+.sith-mode aside, header{ 
     background-color: #191E2B;
 }
  
-.sith-mode header{
-   background-color: #191e2b;  
-}
 
-.sith-mode a, i, label{
+
+.sith-mode a, i, label,.font-size-select, #close-sidebar-btn{
     color:  #ffffff; 
 }
 
-.sith-mode #close-sidebar-btn{
+/* .sith-mode #close-sidebar-btn{
     color:  #ffffff;
+} */
+
+.sith-mode select, textarea, input, input[type='color']{
+   background-color: #393e49 ;
+   border: 1px solid transparent;
 }
 
-.sith-mode select, textarea, input{
-   background-color: #393e49 ;
-}
+
 
 /* .sith-mode a, select, textarea, input:hover{
     background-color: #4e5565 ;
@@ -69,6 +70,8 @@ body.sith-mode{
     background-color: #4e5565;
     border: 1px solid transparent;
 }
+
+
 /* label{
     color: black;
 } */
@@ -159,24 +162,7 @@ body.sith-mode{
 #bottom-text{
     bottom: 0;
 }
-/* .img{
-    width: 100%;
-   flex-grow: 1;
-   background-size: cover;
-} */
 
-
-/* botones */
-/* .btn-default-styles {
-    height: 36px;
-    text-align: center;
-    padding: 0 10px;
-    border: 1px solid transparent;
-    border-radius: 20px;
-    transition: background-color 0.2s;
-    font-size: 14px;
-    cursor: pointer;
-} */
 
 .download-btn{
     margin-top: 35px;
@@ -228,7 +214,6 @@ body.sith-mode{
    position: relative;
    
 }
-/* botón cierre aside */
 .close{
     color: #000;
     font-size: 15px;
@@ -238,39 +223,52 @@ body.sith-mode{
 
 }
 /* color picker */
-.color-wrapper{
+.txt-color-wrapper{
     position: relative;
     padding: 5px;  
     height: 3rem;    
+   
+}
 
+.img-color-wrapper{
+    position: relative;
+    padding: 5px;  
+    height: 3rem;    
+    background-color: #30343F;
+}
+
+.color-choice{
+    width: calc(50% - 5px);
+    top: 0;
 }
 /* VER!!!! */
 .img-color-span{
    
-    /* position: absolute; 
-    bottom: 10px; 
-    right: 10px; */
+   
     font-family: inherit;
-    font-weight: bolder;   
-    
-    position: absolute;
+    font-weight: bolder;       
+    /* position: absolute; */
     left: 35px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 14px;
 }
 
+/* #incolor, #incolor2, #incolor3 {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+
+}
+VER PARA LOS INPUT COLOR */
 
 
-
-.color-choice
-/* transition: background-color 0.2s;
-margin-bottom: 5px;
-border: transparent; */
-
-input[type='color'],
-input[type='color']::-webkit-color-swatch-wrapper,
-input[type='color']::-webkit-color-swatch{
+.color-choice input[type='color'], input[type='color']::-webkit-color-swatch-wrapper, input[type='color']::-webkit-color-swatch {
   width: 18px;
   height: 18px;
   min-width: 18px;
@@ -278,9 +276,9 @@ input[type='color']::-webkit-color-swatch{
   border: 0 black;
   margin: 0;
   padding: 0;
-  margin: auto;
-
+  /* margin: auto; */
 }
+
 
 
 /* filtros select */
@@ -294,19 +292,13 @@ input[type='color']::-webkit-color-swatch{
     font-family: inherit;
     font-weight: bolder;     
     position: absolute;
-    right: 10px;
-    top: 110%;
+    /* right: 10px;
+    top: 110%; */
     transform: translateY(-100%);
     font-size: 14px;
     
 }
 
-
-/* .transparent-wrapper{
-    padding: 25px;
-   
-   
-} */
 
 
 .hidden{
@@ -335,32 +327,22 @@ select, textarea {
 
 input[type="color" i] {
      
-     position:absolute;
+     /* position:absolute; */
      top: 25px;
      appearance: auto;
 }
-    /* appearance: auto;
-    
-   
-    cursor: default;
-  
-   
-    border-width: 1px;
-    border-style: solid;
 
-    border-image: initial;
-    padding: 1px 2px; */
 
-/* .color-wrapper, .transparent-wrapper {
-    position: relative;
-    height: auto;
-   
-} */
+
+
 .transparent{
     background-color: transparent;
 }
 
-
+#img-input-color{
+    position:relative;
+    top:0;
+}
 /* clase usada para el input url
  */
  /* panel-control-input {
