@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +24,7 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body id="all" class="sith-mode">
-    <!-- CONTENEDOR PRINCIPAL FLUID -->
+  aria-hidden="true"
 <div class="container-fluid">
 <div class="row">
     <!-- HEADER -->
@@ -34,14 +35,14 @@
 
                 <div class="row justify justify-content-center center header-margin">         
     <!-- BOTONES HEADER -->
-                        <a id="img-btn" class="waves-effect waves-light btn header-btn col-2 "><i class="material-icons left">image</i>Imágen</a>
+                        <a id="img-btn" class="waves-effect waves-light btn header-btn col-2 "><i class="material-icons left" aria-hidden="true">image</i>Imágen</a>
               
-                        <a id="txt-btn" class="waves-effect waves-light btn header-btn col-2 "><i class="material-icons left col-s4">keyboard</i>Texto</a>
+                        <a id="txt-btn" class="waves-effect waves-light btn header-btn col-2 "><i class="material-icons left col-s4" aria-hidden="true">keyboard</i>Texto</a>
                                 
-                        <a id="jedi-btn" class="waves-effect waves-light btn header-btn hidden col-2 "><i class="material-icons left">lightbulb_outline</i>Modo Claro</a>               
+                        <a id="jedi-btn" class="waves-effect waves-light btn header-btn hidden col-2 "><i class="material-icons left" aria-hidden="true">lightbulb_outline</i>Modo Claro</a>               
                           
                         
-                        <a id="sith-btn" class="waves-effect waves-light btn header-btn col-2"><i class="material-icons left">lightbulb_outline</i>Modo Oscuro</a> 
+                        <a id="sith-btn" class="waves-effect waves-light btn header-btn col-2"><i class="material-icons left" aria-hidden="true">lightbulb_outline</i>Modo Oscuro</a> 
                 </div>
             </div>
         </header>
@@ -68,7 +69,7 @@
             <div class="row justify-content-center">
                 <div class="col-2 align items center">
                     <a id="download" class="waves-effect waves-light btn download-btn btn-default-styles ">
-                    <i id="download-icon" class="material-icons left">file_download</i>Descargar meme
+                    <i id="download-icon" class="material-icons left" aria-hidden="true">file_download</i>Descargar meme
                     </a>
                 </div>
             </div>
@@ -83,7 +84,7 @@
 
         <div class="row justify-content-end">
             <div class="x-btn-container col-1  ">
-                <a id="close-sidebar-btn" class="close" href="#">X</a>
+                <a id="close-sidebar-btn" class="close" aria-label="Close Sidebar" href="#">X</a>
             </div>
         </div> 
 
@@ -93,7 +94,7 @@
                 <h2 class="secondary-tittle">IMÁGEN</h2>
                 <div>
                     <h3 class="third-tittle">URL</h3>
-                    <input id="url-input" type="text" aria-label="URL de la imágen">
+                    <input id="url-input" type="text" aria-label="URL of image">
                 </div>
 
                 <div class="row">
@@ -103,7 +104,7 @@
                         <div class="img-color-wrapper col-6">
                            
                            
-                        <input type="color" class="form-control form-control-color alt color-choice" id="img-input-color" value="#FFFFFF">
+                        <input aria-label="Background Color of Image" type="color" class="form-control form-control-color alt color-choice" id="img-input-color" value="#FFFFFF">
                        
                             <span id="img-color-span" class="img-color-span">#FFFFFF</span>
                        
@@ -114,7 +115,7 @@
 
                         <div class="col-6">
 
-                            <select id="background-blend" class="browser-default">
+                            <select aria-label="Background Color Blend" id="background-blend" class="browser-default">
                             
                                
                                 <option value="unset">Ninguno</option>
@@ -124,7 +125,7 @@
                                 <option value="luminosity">Luminosidad</option>
                                 <option value="multiply">Multiplicar</option>
 
-                              </select>                                               
+                            </select>                                               
                            
                         </div>                       
 
@@ -177,7 +178,7 @@
 
                 </div>
                             <!-- Refresh Button -->
-                <a id="default-filter-btn" class="waves-effect waves-light btn btn-default-styles sith-hover">Reestablecer Filtros</a>
+                <a aria-label="Filter Restart" id="default-filter-btn" class="waves-effect waves-light btn btn-default-styles sith-hover">Reestablecer Filtros</a>
 
           
     </section>
@@ -193,7 +194,7 @@
         <div>
                     <!-- Top Text  -->
             <h3 class="third-tittle">SUPERIOR</h3>
-            <textarea name="" id="top-text-area" cols="30" rows="10">TOP TEXT</textarea>
+            <textarea aria-label="Top Text" name="" id="top-text-area" cols="30" rows="10">TOP TEXT</textarea>
 
             <div>
                         <!-- checkbox -->
@@ -212,7 +213,7 @@
             
                     <!-- Bottom Text -->
             <h3 class="third-tittle">INFERIOR</h3>
-            <textarea name="" id="bottom-text-area" cols="30" rows="10">BOTTOM TEXT</textarea>
+            <textarea aria-label="Bottom Text" name="" id="bottom-text-area" cols="30" rows="10">BOTTOM TEXT</textarea>
             
             <div>
                        <!-- checkbox -->
@@ -238,7 +239,7 @@
 
                     <!-- Font Family -->
 
-                <select id="fonts" class="browser-default">
+                <select id="fonts" class="browser-default" arial-label="Font Family">
                                
                     <option id="arial" value="Arial">Arial</option>
                     <option id="arima" value="Arima">Arima</option>
@@ -254,19 +255,18 @@
 
                             <!-- Font Size -->
                     <div class="col-6">
-                        <input type="number" name="Font Size" aria-label="Tamaño de fuente" class="font-size-select" id="font-size" min="12
-                        " value="40">
+                        <input type="number" name="Font Size" aria-label="Font Size" class="font-size-select" id="font-size" min="12" value="40">
                     </div>
 
                             <!-- Text Align -->
 
                     <div class="txt-align-container col">
                        <div class="row">
-                            <a id="left-align" class="waves-effect waves-light btn  sm-align-btn col-4 sith-hover"><i class="material-icons left i-align ">format_align_left</i></a>
+                            <a id="left-align" class="waves-effect waves-light btn  sm-align-btn col-4 sith-hover" aria-label="Text Align Left"><i class="material-icons left i-align">format_align_left</i></a>
                    
-                            <a id="align-center" class="waves-effect waves-light btn sm-align-btn col-4 sith-hover"><i class="material-icons left">format_align_center</i></a>
+                            <a id="align-center" class="waves-effect waves-light btn sm-align-btn col-4 sith-hover" aria-label="Text Align Center"><i class="material-icons left">format_align_center</i></a>
                   
-                            <a id="right-align" class="waves-effect waves-light btn sm-align-btn col-4 sith-hover"><i class="material-icons left">format_align_right</i></a>
+                            <a id="right-align" class="waves-effect waves-light btn sm-align-btn col-4 sith-hover" aria-label="Text Align Right"><i class="material-icons left">format_align_right</i></a>
                         </div>
                     </div>
                   
@@ -281,7 +281,7 @@
                         <h3 class="third-tittle">COLOR</h3>
                        
                                 
-                                <input type="color" class="form-control form-control-color color-choice alt color-input" id="exampleColorInput" value="#000000">
+                                <input type="color" class="form-control form-control-color color-choice alt color-input" id="exampleColorInput" value="#000000" aria-label="Text Color">
                                 <span id="color-span" class="txt-color-span color-span" >#000000</span>
                      
                     </div>
@@ -289,9 +289,9 @@
                     <div class="col-6 txt-color-wrapper">
                        
                         <h3 class="third-tittle">FONDO</h3>
-                        <!-- <div class=""> -->
+                       
                       
-                            <input type="color" class="form-control form-control-color color-choice alt txt-background-color-input " id="exampleColorInput" value="#FFFFFF">
+                            <input type="color" class="form-control form-control-color color-choice alt txt-background-color-input " id="exampleColorInput" value="#FFFFFF" aria-label="Text Background Color">
                             
                             <span id="txt-background-color-span" class="txt-color-span">#FFFFFF</span>
                         <!-- </div> -->
@@ -316,23 +316,23 @@
                 <div>
                     <h3 class="third-tittle">CONTORNO</h3>
                     <div class="row border-btn-container">
-                        <a id="no-outline-btn" class="waves-effect waves-light btn col-4 sith-hover">Ninguno</a>
-                        <a id="jedi-outline-btn" class="waves-effect waves-light btn col-4 sith-hover">Claro</a>
-                        <a id="sith-outline-btn" class="waves-effect waves-light btn col-4 sith-hover">Oscuro</a>
+                        <a id="no-outline-btn" class="waves-effect waves-light btn col-4 sith-hover" aria-label="No Outline Button">Ninguno</a>
+                        <a id="jedi-outline-btn" class="waves-effect waves-light btn col-4 sith-hover" aria-label="Light Outline Button">Claro</a>
+                        <a id="sith-outline-btn" class="waves-effect waves-light btn col-4 sith-hover" aria-label="Dark Outline Button">Oscuro</a>
                     </div>
                 </div>
 
                 <!-- ---------------- PADDING--------------------- -->
                 <div>
                     <h3 class="third-tittle">ESPACIADO</h3>
-                    <input id="padding-input" type="number" min="10" max="50" value="35">
+                    <input id="padding-input" type="number" min="10" max="50" value="35" aria-label="Padding Selection">
                 </div>
 
                 <!-- LINE SPACING -->
 
                 <div>
                     <h3 class="third-tittle">INTERLINEADO</h3>
-                    <select name="" id="line-height-input" class="browser-default">
+                    <select name="" id="line-height-input" class="browser-default" aria-label="Line Height Selection">
                         <option value="0.8">0.8</option>
                         <option value="1">1</option>
                         <option value="1.2"selected>1.2</option>
@@ -352,9 +352,7 @@
 
 
 
-  
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
-<!-- JavaScript Bundle with Popper -->
+
 
 
 <!-- Descarga Meme JS -->
@@ -371,8 +369,8 @@
 <!-- Custom JS -->
 <script src="./app.js"></script>
 </div>
-<!-- cierra div row de prueba para ubicar aside -->
+
 </div>
-<!-- CIERRA CONTENEDOR PRINCIPAL FLUID -->
+
 </body>
 </html>
