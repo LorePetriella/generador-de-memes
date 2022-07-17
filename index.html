@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arima:wght@300;600&family=Bangers&family=Open+Sans:wght@300;500;700&family=Oswald:wght@300;500&family=Titan+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
      <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
      <!-- Boostrap -->
@@ -35,7 +36,7 @@
     <!-- BOTONES HEADER -->
                         <a id="img-btn" class="waves-effect waves-light btn header-btn col-2 "><i class="material-icons left">image</i>Imágen</a>
               
-                        <a id="txt-btn" class="waves-effect waves-light btn  col-2 "><i class="material-icons left col-s4">keyboard</i>Texto</a>
+                        <a id="txt-btn" class="waves-effect waves-light btn header-btn col-2 "><i class="material-icons left col-s4">keyboard</i>Texto</a>
                                 
                         <a class="waves-effect waves-light btn  hidden col-2 "><i class="material-icons left">lightbulb_outline</i>Modo Claro</a>               
                           
@@ -51,7 +52,7 @@
 
 
     <main class="generator-container row justify-content-center">
-        <!-- <div class="generator-container row justify-content-center"> -->
+        
             <div id="img-wrapper" class="meme-container">
             
                 <p id="top-txt-meme" class="meme-txt">TOP TEXT</p>
@@ -71,7 +72,7 @@
                     </a>
                 </div>
             </div>
-        <!-- </div>     -->
+      
     </main>
 
 <!-- TERMINA MAIN -->
@@ -99,10 +100,10 @@
                     <h3 class="third-tittle">FONDO</h3>
                     <div class="row">
                         <!-- Color Input -->
-                        <div class="color-wrapper col-6">
+                        <div class="img-color-wrapper col-6">
                            
                            
-                        <input type="color" class="form-control form-control-color color-choice" id="img-input-color" value="#FFFFFF">
+                        <input type="color" class="form-control form-control-color alt color-choice" id="img-input-color" value="#FFFFFF">
                        
                             <span id="img-color-span" class="img-color-span">#FFFFFF</span>
                        
@@ -180,7 +181,6 @@
 
           
     </section>
-    <!-- </div>  -->
 
 <!-- TEXT ASIDE  -->
   
@@ -276,7 +276,7 @@
                       <!-- COLORS -->
             <div class="txt-color-container">
                 <div class="row">
-                    <div class="col-6 color-wrapper">
+                    <div class="col-6 txt-color-wrapper">
                     <!-- Text Colors -->
                         <h3 class="third-tittle">COLOR</h3>
                        
@@ -286,7 +286,7 @@
                      
                     </div>
                     <!-- Background-color -->
-                    <div class="col-6 color-wrapper">
+                    <div class="col-6 txt-color-wrapper">
                        
                         <h3 class="third-tittle">FONDO</h3>
                         <!-- <div class=""> -->
@@ -315,7 +315,7 @@
 
                 <div>
                     <h3 class="third-tittle">CONTORNO</h3>
-                    <div class="row">
+                    <div class="row border-btn-container">
                         <a id="no-outline-btn" class="waves-effect waves-light btn col-4 sith-hover">Ninguno</a>
                         <a id="jedi-outline-btn" class="waves-effect waves-light btn col-4 sith-hover">Claro</a>
                         <a id="sith-outline-btn" class="waves-effect waves-light btn col-4 sith-hover">Oscuro</a>
