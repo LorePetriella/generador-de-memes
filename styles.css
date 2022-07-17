@@ -10,13 +10,6 @@ body{
     margin: 0;
    
 }
-
-
-
-
-
-
-
 body.jedi-mode {
     --color-header: #e0e0e0;
     --color-background: #eeeeee;
@@ -27,10 +20,59 @@ body.jedi-mode {
     --color-title-panel: rgb(33 33 33 / 80%);
     --color-title-control: rgb(33 33 33 / 70%);
    
-    --border-radius: 3px; 
-
-
+    --border-radius: 3px;
 }
+
+/* MODO CLARO */
+body.jedi-mode{
+    color:  #424242;
+    background-color:  #eeeeee;
+    
+}
+
+.jedi-mode h2{
+    color: rgb(33 33 33 / 80%);
+}
+
+.jedi-mode h3{
+    color: rgb(33 33 33 / 70%);
+}
+
+.jedi-mode header, a.header-btn{ 
+    background-color: #e0e0e0;
+    
+}
+
+.jedi-mode aside{
+    background-color: #fafafa;
+}
+
+.jedi-mode a, i, label,.font-size-select, #close-sidebar-btn, select, textarea, input[type='range'], input[type='number']{
+    color:  #424242;
+}
+
+.jedi-mode a:not(.download-btn, .header-btn), select, textarea, input[type='range'], input[type='color']{
+    background-color: #e0e0e0 ;
+    border: 1px solid transparent;
+ }
+
+ .jedi-mode #txt-btn:hover, #img-btn:hover, #sith-btn:hover, a.sith-hover:hover, input:hover, select:hover, textarea:hover{
+    background-color: #bdbdbd;
+    border: 1px solid transparent;
+}
+.jedi-mode select:focus{
+    outline: none;
+}
+
+.jedi-mode input[type='color']:focus{
+    color: #424242; 
+    background-color: #bdbdbd;
+    border: 1px solid transparent; 
+}
+
+
+
+
 /* MODO OSCURO */
 
 body.sith-mode{

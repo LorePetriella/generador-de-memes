@@ -28,6 +28,24 @@ aside.classList.remove("hidden") //quiero que se vea el aside
 imgSection.classList.remove("hidden") //quiero que no se vea la section imagen
 txtSection.classList.add("hidden") //qiuero que se vea la section texto
 
+//Modo claro - oscuro (aka jedi-mode/sithmode)
+ const lightBtn = document.getElementById('jedi-btn'); //Btn modo claro
+ const darkBtn = document.getElementById('sith-btn'); //Btn modo oscuro
+ const body = document.getElementById('all');
+
+const jedi = darkBtn.addEventListener('click', ()=>{
+body.classList.add('jedi-mode');
+body.classList.remove('sith-mode');
+darkBtn.classList.toggle('hidden');
+lightBtn.classList.toggle('hidden');
+})
+const sith = lightBtn.addEventListener('click', ()=>{
+body.classList.add('sith-mode');
+body.classList.remove('jedi-mode');
+darkBtn.classList.toggle('hidden');
+lightBtn.classList.toggle('hidden');
+})
+
 
 
 
@@ -168,7 +186,6 @@ const transparentBackground = document.getElementById('no-background'); //input 
 
 colorInput.addEventListener('input', ()=>{
   let color = colorInput.value;
-  colorSpan.style.color = color;
   colorSpan.innerHTML = color;
   memeTopText.style.color = color;
   memeBottomText.style.color = color;
@@ -178,7 +195,6 @@ colorInput.addEventListener('input', ()=>{
 
 txtBackgroundColorInput.addEventListener('input', ()=>{
   fondo = txtBackgroundColorInput.value;
-  txtBackgroundColorSpan.style.color = fondo;
   txtBackgroundColorSpan.innerHTML = fondo;
   memeTopText.style.backgroundColor = fondo;
   memeBottomText.style.backgroundColor = fondo;
@@ -319,14 +335,3 @@ downloadBtn.addEventListener('click', () => {
 
 
 
-// const table = document.querySelector("table");
-// const div = document.querySelector("div");
-// domtoimage.toPng(table)
-//   .then((dataUrl) => {
-//     const img = new Image();
-//     img.src = dataUrl;
-//     div.appendChild(img);
-//   })
-//   .catch((error) => {
-//     console.error(error);
-//   });
