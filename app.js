@@ -33,18 +33,23 @@ txtSection.classList.add("hidden") //qiuero que se vea la section texto
  const darkBtn = document.getElementById('sith-btn'); //Btn modo oscuro
  const body = document.getElementById('all');
 
+ 
+
 const jedi = darkBtn.addEventListener('click', ()=>{
 body.classList.add('jedi-mode');
 body.classList.remove('sith-mode');
 darkBtn.classList.toggle('hidden');
 lightBtn.classList.toggle('hidden');
+
 })
 const sith = lightBtn.addEventListener('click', ()=>{
 body.classList.add('sith-mode');
 body.classList.remove('jedi-mode');
 darkBtn.classList.toggle('hidden');
 lightBtn.classList.toggle('hidden');
+
 })
+
 
 
 

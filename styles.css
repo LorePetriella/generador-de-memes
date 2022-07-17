@@ -10,72 +10,13 @@ body{
     margin: 0;
    
 }
-body.jedi-mode {
-    --color-header: #e0e0e0;
-    --color-background: #eeeeee;
-    --color-panel: #fafafa;
-    --color-boton-default: #e0e0e0;
-    --color-boton-default-hover: #bdbdbd;
-    --color-text: #424242;
-    --color-title-panel: rgb(33 33 33 / 80%);
-    --color-title-control: rgb(33 33 33 / 70%);
-   
-    --border-radius: 3px;
-}
-
-/* MODO CLARO */
-body.jedi-mode{
-    color:  #424242;
-    background-color:  #eeeeee;
-    
-}
-
-.jedi-mode h2{
-    color: rgb(33 33 33 / 80%);
-}
-
-.jedi-mode h3{
-    color: rgb(33 33 33 / 70%);
-}
-
-.jedi-mode header, a.header-btn{ 
-    background-color: #e0e0e0;
-    
-}
-
-.jedi-mode aside{
-    background-color: #fafafa;
-}
-
-.jedi-mode a, i, label,.font-size-select, #close-sidebar-btn, select, textarea, input[type='range'], input[type='number']{
-    color:  #424242;
-}
-
-.jedi-mode a:not(.download-btn, .header-btn), select, textarea, input[type='range'], input[type='color']{
-    background-color: #e0e0e0 ;
-    border: 1px solid transparent;
- }
-
- .jedi-mode #txt-btn:hover, #img-btn:hover, #sith-btn:hover, a.sith-hover:hover, input:hover, select:hover, textarea:hover{
-    background-color: #bdbdbd;
-    border: 1px solid transparent;
-}
-.jedi-mode select:focus{
-    outline: none;
-}
-
-.jedi-mode input[type='color']:focus{
-    color: #424242; 
-    background-color: #bdbdbd;
-    border: 1px solid transparent; 
-}
 
 
 
 
 /* MODO OSCURO */
 
-body.sith-mode{
+.sith-mode{
     color:  #ffffff;
     background-color:  #30343f;
     
@@ -113,6 +54,131 @@ body.sith-mode{
     background-color: #4e5565;
     border: 1px solid transparent; 
 }
+
+
+
+/* MODO CLARO */
+/* ---------------------------------------------------------------------------------- */
+
+.jedi-mode{
+    color:  #424242;
+    background-color:  #eeeeee;
+    
+}
+
+.jedi-mode h2{
+    color: rgb(33 33 33 / 80%);
+}
+
+.jedi-mode h3{
+    color: rgb(33 33 33 / 70%);
+}
+
+.jedi-mode header{ 
+    background-color: #e0e0e0;
+    
+}
+
+.jedi-mode aside{
+    background-color: #fafafa;
+}
+
+
+.jedi-mode * i, a, .font-size-select, #close-sidebar-btn, input[type='range']{
+    color:  #424242;
+}
+
+
+
+.jedi-mode label {
+    color:  #424242
+}
+
+.jedi-mode textarea {
+    color:  #424242;
+    background-color: #bdbdbd;
+}
+
+.jedi-mode select {
+    color:  #424242;
+    background-color: #e0e0e0;
+}
+
+.jedi-mode input[type='number'] {
+    color:  #424242
+}
+
+ .jedi-mode a:not(.download-btn){
+    background-color: #e0e0e0 ;
+    border: 1px solid transparent;
+ }
+
+ .jedi-mode input[type='color'] {
+    background-color: #e0e0e0 ;
+    border: 1px solid transparent;
+ }
+
+
+.jedi-mode textarea:hover {
+    background-color: #e0e0e0;
+    border: 1px solid transparent;
+
+}
+
+.jedi-mode #txt-btn:hover {
+    background-color: #bdbdbd;
+    border: 1px solid transparent;
+
+}
+
+.jedi-mode #img-btn:hover {
+    background-color: #bdbdbd;
+    border: 1px solid transparent;
+
+}
+.jedi-mode #jedi-btn:hover {
+    background-color: #bdbdbd;
+    border: 1px solid transparent;
+
+}
+
+.jedi-mode input:hover {
+    background-color: #bdbdbd;
+    border: 1px solid transparent;
+
+}
+
+.jedi-mode select:hover {
+    background-color: #bdbdbd;
+    border: 1px solid transparent;
+
+}
+
+.jedi-mode .sith-hover:hover{
+    background-color: #bdbdbd;
+}
+
+.jedi-mode #download-icon{
+    color: white; 
+}
+
+.jedi-mode #download:hover{
+    color: white; 
+}
+
+
+.jedi-mode select:focus{
+    outline: none;
+}
+
+.jedi-mode input[type='color']:focus{
+    color: #424242; 
+    background-color: #bdbdbd;
+    border: 1px solid transparent; 
+}
+
+
+
 
 
 /* BOTONES */
@@ -251,14 +317,7 @@ body.sith-mode{
    position: relative;
    
 }
-.close{
-    color: #000;
-    font-size: 15px;
-    cursor: pointer;
-    text-decoration: none;
-    margin: 0;
 
-}
 /* color picker */
 
 /* Imágen */
@@ -358,16 +417,16 @@ select, textarea {
     position:relative;
     top:0;
 }
-/* clase usada para el input url
- */
- /* panel-control-input {
-    width: 100%;
-    height: 36px;
-    background-color: var(--color-boton-default);
-    border-radius: var(--border-radius);
-    transition: background-color 0.2s;
-    padding: 5px 10px;
-    margin-bottom: 5px; */
+
+.close{
+    color: #000;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0;
+    background-color: transparent;
+
+}
 
     input :hover{
         background-color: #bdbdbd;
