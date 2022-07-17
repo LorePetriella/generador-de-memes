@@ -125,10 +125,6 @@ restartFilterBtn.addEventListener('click', (e)=>{
   restart(e)
 });
 
-
-
-
-
 // ---------------------------------TEXT SIDEBAR-------------------------------------------
 
 //Botón TEXTO
@@ -312,9 +308,25 @@ lineHeight.addEventListener('change', ()=>{
   memeBottomText.style.lineHeight = `${lineHeight.value}`;
 })
 
+// ------------------------- Botón Descarga ----------------------------------------
 
-// ---------------------------------IMG SIDEBAR-------------------------------------------
+const downloadBtn = document.getElementById('download'); //Btn descarga meme
+
+downloadBtn.addEventListener('click', () => {
+  domtoimage.toBlob(imgWrapper).then(blob =>
+    saveAs(blob, 'my-meme.png'))
+});
 
 
 
-
+// const table = document.querySelector("table");
+// const div = document.querySelector("div");
+// domtoimage.toPng(table)
+//   .then((dataUrl) => {
+//     const img = new Image();
+//     img.src = dataUrl;
+//     div.appendChild(img);
+//   })
+//   .catch((error) => {
+//     console.error(error);
+//   });
