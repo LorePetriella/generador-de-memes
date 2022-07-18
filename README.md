@@ -1,4 +1,5 @@
 # generador-de-memes
+
 Segundo TP - ADA Frontend (Primer trabajo con JavaScript)
 
 ---
@@ -12,10 +13,11 @@ Segundo TP - ADA Frontend (Primer trabajo con JavaScript)
 
 ---
 
-## _Pseudo Código_
+## _Diagrama de Flujos_
 
+Ejemplo de Diagrama de Flujos para la función del ckeckbox que elimima el color de fondo de los textos del meme.
 
----
+## ![ejemplo de diagrama de flujos](./assets/diagrama-flujos.jpeg)
 
 ## _Future Updates_
 
@@ -23,15 +25,11 @@ _A medida que vaya avanzando en el curso, voy a ir subiendo nuevos proyectos y t
 
 ---
 
-
 ## _Contact_
-
 
 :speech_balloon: [Email](mailto:lorepetriella@gmail.com?subject=Contact "Hi!")
 
-
 ---
-
 
 ## _Profile_
 
@@ -39,17 +37,6 @@ _A medida que vaya avanzando en el curso, voy a ir subiendo nuevos proyectos y t
 
 ---
 
-
 **_:bulb: By Lore Petriella_**
 
-
-
-
-
-
-
 ![dividergif](https://c.tenor.com/OKLkZ1Um5HIAAAAC/mad-typing.gif)
-
-
-
-
