@@ -1,438 +1,410 @@
 *,
 *::before,
-*::after{
-    box-sizing: border-box;
+*::after {
+  box-sizing: border-box;
 }
 /* estilos generales */
 
-body{
-    height: 100 vh;
-    margin: 0;
-   
+body {
+  height: 100 vh;
+  margin: 0;
 }
-
-
-
 
 /* MODO OSCURO */
 
-.sith-mode{
-    color:  #ffffff;
-    background-color:  #30343f;
-    
+.sith-mode {
+  color: #ffffff;
+  background-color: #30343f;
 }
 
-.sith-mode aside, header, a.header-btn{ 
-    background-color: #191E2B;
-    
-}
- 
-
-
-.sith-mode a, i, label,.font-size-select, #close-sidebar-btn, select, textarea, input[type='range'], input[type='number']{
-    color:  #ffffff; 
+.sith-mode aside,
+header,
+a.header-btn {
+  background-color: #191e2b;
 }
 
-
-.sith-mode a:not(.download-btn, .header-btn), select, textarea, input[type='range'], input[type='color']{
-   background-color: #393e49 ;
-   border: 1px solid transparent;
+.sith-mode a,
+i,
+label,
+.font-size-select,
+#close-sidebar-btn,
+select,
+textarea,
+input[type="range"],
+input[type="number"] {
+  color: #ffffff;
 }
 
-
-
-.sith-mode #txt-btn:hover, #img-btn:hover, #sith-btn:hover, a.sith-hover:hover, input:hover, select:hover, textarea:hover{
-    background-color: #4e5565;
-    border: 1px solid transparent;
-}
-.sith-mode select:focus{
-    outline: none;
-}
-
-.sith-mode input[type='color']:focus{
-    color: #ffffff; 
-    background-color: #4e5565;
-    border: 1px solid transparent; 
+.sith-mode a:not(.download-btn, .header-btn),
+select,
+textarea,
+input[type="range"],
+input[type="color"] {
+  background-color: #393e49;
+  border: 1px solid transparent;
 }
 
+.sith-mode #txt-btn:hover,
+#img-btn:hover,
+#sith-btn:hover,
+a.sith-hover:hover,
+input:hover,
+select:hover,
+textarea:hover {
+  background-color: #4e5565;
+  border: 1px solid transparent;
+}
+.sith-mode select:focus {
+  outline: none;
+}
 
+.sith-mode input[type="color"]:focus {
+  color: #ffffff;
+  background-color: #4e5565;
+  border: 1px solid transparent;
+}
 
 /* MODO CLARO */
 /* ---------------------------------------------------------------------------------- */
 
-.jedi-mode{
-    color:  #424242;
-    background-color:  #eeeeee;
-    
+.jedi-mode {
+  color: #424242;
+  background-color: #eeeeee;
 }
 
-.jedi-mode h2{
-    color: rgb(33 33 33 / 80%);
+.jedi-mode h2 {
+  color: rgb(33 33 33 / 80%);
 }
 
-.jedi-mode h3{
-    color: rgb(33 33 33 / 70%);
+.jedi-mode h3 {
+  color: rgb(33 33 33 / 70%);
 }
 
-.jedi-mode header{ 
-    background-color: #e0e0e0;
-    
+.jedi-mode header {
+  background-color: #e0e0e0;
 }
 
-.jedi-mode aside{
-    background-color: #fafafa;
+.jedi-mode aside {
+  background-color: #fafafa;
 }
 
-
-.jedi-mode * i, a, .font-size-select, #close-sidebar-btn, input[type='range']{
-    color:  #424242;
+.jedi-mode * i,
+a,
+.font-size-select,
+#close-sidebar-btn,
+input[type="range"] {
+  color: #424242;
 }
-
-
 
 .jedi-mode label {
-    color:  #424242
+  color: #424242;
 }
 
 .jedi-mode textarea {
-    color:  #424242;
-    background-color: #bdbdbd;
+  color: #424242;
+  background-color: #bdbdbd;
 }
 
 .jedi-mode select {
-    color:  #424242;
-    background-color: #e0e0e0;
+  color: #424242;
+  background-color: #e0e0e0;
 }
 
-.jedi-mode input[type='number'] {
-    color:  #424242
+.jedi-mode input[type="number"] {
+  color: #424242;
 }
 
- .jedi-mode a:not(.download-btn){
-    background-color: #e0e0e0 ;
-    border: 1px solid transparent;
- }
+.jedi-mode a:not(.download-btn) {
+  background-color: #e0e0e0;
+  border: 1px solid transparent;
+}
 
- .jedi-mode input[type='color'] {
-    background-color: #e0e0e0 ;
-    border: 1px solid transparent;
- }
-
+.jedi-mode input[type="color"] {
+  background-color: #e0e0e0;
+  border: 1px solid transparent;
+}
 
 .jedi-mode textarea:hover {
-    background-color: #e0e0e0;
-    border: 1px solid transparent;
-
+  background-color: #e0e0e0;
+  border: 1px solid transparent;
 }
 
 .jedi-mode #txt-btn:hover {
-    background-color: #bdbdbd;
-    border: 1px solid transparent;
-
+  background-color: #bdbdbd;
+  border: 1px solid transparent;
 }
 
 .jedi-mode #img-btn:hover {
-    background-color: #bdbdbd;
-    border: 1px solid transparent;
-
+  background-color: #bdbdbd;
+  border: 1px solid transparent;
 }
 .jedi-mode #jedi-btn:hover {
-    background-color: #bdbdbd;
-    border: 1px solid transparent;
-
+  background-color: #bdbdbd;
+  border: 1px solid transparent;
 }
 
 .jedi-mode input:hover {
-    background-color: #bdbdbd;
-    border: 1px solid transparent;
-
+  background-color: #bdbdbd;
+  border: 1px solid transparent;
 }
 
 .jedi-mode select:hover {
-    background-color: #bdbdbd;
-    border: 1px solid transparent;
-
+  background-color: #bdbdbd;
+  border: 1px solid transparent;
 }
 
-.jedi-mode .sith-hover:hover{
-    background-color: #bdbdbd;
+.jedi-mode .sith-hover:hover {
+  background-color: #bdbdbd;
 }
 
-.jedi-mode #download-icon{
-    color: white; 
+.jedi-mode #download-icon {
+  color: white;
 }
 
-.jedi-mode #download:hover{
-    color: white; 
+.jedi-mode #download:hover {
+  color: white;
 }
 
-
-.jedi-mode select:focus{
-    outline: none;
+.jedi-mode select:focus {
+  outline: none;
 }
 
-.jedi-mode input[type='color']:focus{
-    color: #424242; 
-    background-color: #bdbdbd;
-    border: 1px solid transparent; 
+.jedi-mode input[type="color"]:focus {
+  color: #424242;
+  background-color: #bdbdbd;
+  border: 1px solid transparent;
 }
-
-
-
-
 
 /* BOTONES */
 
 .btn {
-    height: 36px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 10px;
-    border-radius: 3px ;
-    transition: background-color 0.2s;
-    font-size: 14px;
-    cursor: pointer;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+  font-size: 14px;
+  cursor: pointer;
 }
-
-
-
 
 /* TÍTULO */
 /* estilos h1 */
 
-
-.header-title{
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 60px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    text-align: center;
-    margin: 10px;
-}
- 
-.header-margin{
-    margin-bottom: 5px;
+.header-title {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 10px;
 }
 
-
+.header-margin {
+  margin-bottom: 5px;
+}
 
 /* CANVAS IMAGEN */
 
-.meme-container{
-    width: 100%;
-    max-width: 600px;
-    height: 600px;
-    background-color: black;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin-top: 5px;
-
+.meme-container {
+  width: 100%;
+  max-width: 600px;
+  height: 600px;
+  background-color: black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-top: 5px;
 }
 
-#meme-img{
-    width: 100%;
-    flex-grow: 1;
-    background-size: cover;
+#meme-img {
+  width: 100%;
+  flex-grow: 1;
+  background-size: cover;
 }
 
-.meme-txt{
-
-    font-family: Arial;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    position: static;
-    padding: 22px 50px;
-    margin:0;
-    font-size: 54px;
-    width: 100%;
-    text-align: center;
-    font-weight: 800;
-
-
-
+.meme-txt {
+  font-family: Arial;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  position: static;
+  padding: 22px 50px;
+  margin: 0;
+  font-size: 54px;
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
 }
 
-#top-text{
-    top:0;
+#top-text {
+  top: 0;
 }
 
-#bottom-text{
-    bottom: 0;
+#bottom-text {
+  bottom: 0;
 }
 
-
-.download-btn{
-    margin-top: 35px;
-    color: white;
-    background-color: #1f8b40;
-   
+.download-btn {
+  margin-top: 35px;
+  color: white;
+  background-color: #1f8b40;
 }
 
-.download-btn:hover{
-    background-color: #34723a;
-    border: 1px solid transparent;
+.download-btn:hover {
+  background-color: #34723a;
+  border: 1px solid transparent;
 }
-
 
 /* ASIDE -  SIDEBAR */
 
-.sidebar{
-    width: 17%;
-    height: 100%;
-    position:fixed;
-    right: 0;
-    overflow: auto;
-    z-index: 10000;
+.sidebar {
+  width: 17%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  overflow: auto;
+  z-index: 10000;
 }
 
-.secondary-tittle{
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 20px;
-    width: 100%;
-    font-size: 20px;
-    font-family: 'Julius Sans One', sans-serif;
-    font-weight: lighter;
-    letter-spacing: 1px;
-    font-weight: 700;
-
+.secondary-tittle {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 20px;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-weight: 700;
 }
 
-.third-tittle{
-    font-family: 'Julius Sans One', sans-serif;
-    letter-spacing: 1px;
-    font-size: 13px;
-    font-weight: bolder;
+.third-tittle {
+  font-family: "Julius Sans One", sans-serif;
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: bolder;
 }
-
 
 /* BOTÓN CIERRE SIDEBAR */
 
-.x-btn-container{
-
-   outline: 0;
-   position: relative;
-   
+.x-btn-container {
+  outline: 0;
+  position: relative;
 }
 
 /* color picker */
 
 /* Imágen */
-.img-color-wrapper{
-    position: relative;
-    padding: 5px;  
-    height: 3rem;    
-    
+.img-color-wrapper {
+  position: relative;
+  padding: 5px;
+  height: 3rem;
 }
 
-.color-choice{
-    width: calc(50% - 5px);
-    top: 0;
+.color-choice {
+  width: calc(50% - 5px);
+  top: 0;
 }
 /* VER!!!! */
-.img-color-span{
-   
-   font-family: inherit;
-    font-weight: bolder;       
-    position: absolute;
-    left: 35px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 14px;
+.img-color-span {
+  font-family: inherit;
+  font-weight: bolder;
+  position: absolute;
+  left: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
 }
 
-
-.color-choice input[type='color'], input[type='color']::-webkit-color-swatch-wrapper, input[type='color']::-webkit-color-swatch {
+.color-choice input[type="color"],
+input[type="color"]::-webkit-color-swatch-wrapper,
+input[type="color"]::-webkit-color-swatch {
   width: 18px;
   height: 18px;
   min-width: 18px;
   border-radius: 50%;
   background-color: transparent;
- }
+}
 
 /* Texto */
 
-.txt-color-wrapper{
-    position: relative;
-    padding: 5px;  
-    height: 3rem;    
-   
+.txt-color-wrapper {
+  position: relative;
+  padding: 5px;
+  height: 3rem;
 }
-.txt-color-span{
-   
-    font-family: inherit;
-    font-weight: bolder;     
-    position: absolute;
-    right: 10px;
-    top: 55px;
-    transform: translateY(-100%);
-    font-size: 14px;
-    
+.txt-color-span {
+  font-family: inherit;
+  font-weight: bolder;
+  position: absolute;
+  right: 10px;
+  top: 55px;
+  transform: translateY(-100%);
+  font-size: 14px;
 }
-
-
-
 
 /* Botones alineación texto */
 
-.txt-align-container{
-    padding-top: 5px!important;
+.txt-align-container {
+  padding-top: 5px !important;
 }
 
-.sm-align-btn{
-    margin: 0;
-    width: calc(100% / 3 - 10px / 3);
-   min-width: 0;
-   padding: none;
+.sm-align-btn {
+  margin: 0;
+  width: calc(100% / 3 - 10px / 3);
+  min-width: 0;
+  padding: none;
 }
 
-.border-btn-container{
-    margin:auto;
-    padding: 2px;
+.border-btn-container {
+  margin: auto;
+  padding: 2px;
 }
 
-
-i.left{
-    margin: unset;
+i.left {
+  margin: unset;
 }
 
-.alt{
+.alt {
+  width: 100%;
+}
+
+select,
+textarea {
+  border: 0;
+  outline: 0;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+#img-input-color {
+  position: relative;
+  top: 0;
+}
+
+.close {
+  color: #000;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0;
+  background-color: transparent;
+}
+
+input :hover {
+  background-color: #bdbdbd;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .sidebar {
     width: 100%;
+  }
 }
-
-select, textarea {
-    border: 0;         
-    outline: 0;
-}
-
-
-.transparent{
-    background-color: transparent;
-}
-
-#img-input-color{
-    position:relative;
-    top:0;
-}
-
-.close{
-    color: #000;
-    font-size: 15px;
-    cursor: pointer;
-    text-decoration: none;
-    margin: 0;
-    background-color: transparent;
-
-}
-
-    input :hover{
-        background-color: #bdbdbd;
-    }
-
-    .hidden{
-        display: none;
-    }
-    
