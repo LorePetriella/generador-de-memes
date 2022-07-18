@@ -27,14 +27,16 @@ a.header-btn {
 i,
 label,
 .font-size-select,
-#close-sidebar-btn,
 select,
 textarea,
 input[type="range"],
 input[type="number"] {
   color: #ffffff;
 }
-
+.sith-mode #close-sidebar-btn {
+  color: white;
+  background-color: transparent;
+}
 .sith-mode a:not(.download-btn, .header-btn),
 select,
 textarea,
@@ -94,6 +96,10 @@ a,
 #close-sidebar-btn,
 input[type="range"] {
   color: #424242;
+}
+
+.jedi-mode #close-sidebar-btn {
+  background-color: transparent;
 }
 
 .jedi-mode label {
@@ -403,8 +409,18 @@ input :hover {
   display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1300px) {
+  .sidebar {
+    width: 30%;
+  }
+}
+
+@media (max-width: 730px) {
   .sidebar {
     width: 100%;
+  }
+
+  .header-title {
+    font-size: 30px;
   }
 }
