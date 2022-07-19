@@ -303,3 +303,28 @@ const downloadBtn = document.getElementById("download"); //Btn descarga meme
 downloadBtn.addEventListener("click", () => {
   domtoimage.toBlob(imgWrapper).then((blob) => saveAs(blob, "my-meme.png"));
 });
+
+// -----------------------------------------
+
+const ajustarImagen = () => {
+  imgWrapper.style.height = `${imgWrapper.getBoundingClientRect().width}px`;
+};
+
+window.addEventListener("resize", ajustarImagen);
+
+// const ajustarTexto = () => {
+//   if (window.innerWidth > 1100) {
+//     return;
+//   }
+
+//   const tamanioTexto = Math.round((window.innerWidth / 10) * 0.5);
+//   const padding = Math.round((window.innerWidth / 10) * 0.2);
+
+//   fSize.value = tamanioTexto;
+//   paddingTxt.value = padding;
+
+//   actualizarEspaciado();
+//   actualizarTamanioTexto();
+// };
+
+// window.addEventListener("resize", ajustarTexto);

@@ -215,8 +215,8 @@ input[type="range"] {
 
 .meme-container {
   width: 100%;
-  max-width: 600px;
-  height: 600px;
+  max-width: 610px;
+  height: 610px;
   background-color: black;
   position: relative;
   display: flex;
@@ -422,5 +422,26 @@ input :hover {
 
   .header-title {
     font-size: 30px;
+  }
+  .download-btn {
+    width: fit-content;
+    height: fit-content;
+  }
+  .header-btn {
+    width: fit-content;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 640px) {
+  .meme-txt {
+    font-size: unset;
+  }
+}
+
+@media (max-width: 390px) {
+  .download-wrapper {
+    display: flex;
+    justify-content: space-evenly !important;
   }
 }
