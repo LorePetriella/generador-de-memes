@@ -311,20 +311,3 @@ const ajustarImagen = () => {
 };
 
 window.addEventListener("resize", ajustarImagen);
-
-// const ajustarTexto = () => {
-//   if (window.innerWidth > 1100) {
-//     return;
-//   }
-
-//   const tamanioTexto = Math.round((window.innerWidth / 10) * 0.5);
-//   const padding = Math.round((window.innerWidth / 10) * 0.2);
-
-//   fSize.value = tamanioTexto;
-//   paddingTxt.value = padding;
-
-//   actualizarEspaciado();
-//   actualizarTamanioTexto();
-// };
-
-// window.addEventListener("resize", ajustarTexto);
